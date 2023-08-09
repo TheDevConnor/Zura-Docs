@@ -2,16 +2,16 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>Zura Lang</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: '',
   },
   chat: {
-    link: 'https://discord.com',
+    link: 'https://discord.gg/TpwePnVHgT',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/TheDevConnor/Zura-Docs',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'Zura Lang Docs',
   },
 }
 
