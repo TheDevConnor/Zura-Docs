@@ -1,4 +1,10 @@
 {
   "index": "Introduction",
-  "getting-started": "getting started"
+  "getting-started": "getting started",
+  "variables": "variables",
+  "conditions": "conditions",
+  "functions": "functions", 
+  "loops": "loops",
+  "classes": "classes",
+  "libraries": "libraries"
 }
