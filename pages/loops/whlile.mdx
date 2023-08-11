@@ -1,0 +1,38 @@
+# While loops 
+While loops are a way of looping code until a conditon is met. There are many diffrent usefull key words to know when using while loops though. Below is an example and what the key words mean.
+
+
+## Normal while loop example
+```zura
+have i := 0;
+while(i < 10){ 
+    info i;
+    i = i + 1;
+}
+```
+
+
+
+## While loop example with optional conditon
+```zura
+have i := 0;
+loop(true) : (i = i + 1){ 
+    if(i == 5){
+        info "i is 5"; 
+        continue; 
+    }
+    if(i == 10){
+        info "i is 10";
+        break;
+    }
+}
+```
+
+## For loop example
+```zura
+while(have i := 0; i < 10) : (i = i + 1){
+    info i;
+}
+```
+
+The first key word you will notice in the above code is the `while` keyword which will create a while loop. After that in parentheses is the condition that will be checked every time the loop is run. If the condition is true the code in the curly braces will be run. The next key word is the `continue` keyword which will skip the rest of the code in the loop and start the loop over again. The last key word is the `break` keyword which will stop the loop and continue on with the rest of the code.
