@@ -2,19 +2,47 @@
 Match case statments are another way of doing conditional logic. They are similar to switch statements in other languages. They are useful when you have a lot of different cases to check for. They are also useful when you want to return a value from the case statement. 
 
 ```zura
-have a := 1;
+include "std";
 
-match(day_number) {
-    case 0: return "Sunday";
-    case 1: return "Monday";
-    case 2: return "Tuesday";
-    case 3: return "Wednesday";
-    case 4: return "Thursday";
-    case 5: return "Friday";
-    case 6: return "Saturday";
-default:
-    return "Invalid day number" + toString(day_number);
+fn getDayName(day_number) {
+    match (day_number) {
+        case 0: return "Sunday";
+        case 1: return "Monday";
+        case 2: return "Tuesday";
+        case 3: return "Wednesday";
+        case 4: return "Thursday";
+        case 5: return "Friday";
+        case 6: return "Saturday";
+    default:
+        return "Invalid day number" + toString(day_number);
+    }
+}
+
+while (have i := 0; i < 7) : (i := i + 1) {
+    info "Day " + toString(i) + " is " + getDayName(i);
 }
 ```
+Lets explane the code above.
+```zura
+fn getDayName(day_number) {
+    match (day_number) {
+        case 0: return "Sunday";
+        case 1: return "Monday";
+        case 2: return "Tuesday";
+        case 3: return "Wednesday";
+        case 4: return "Thursday";
+        case 5: return "Friday";
+        case 6: return "Saturday";
+    default:
+        return "Invalid day number" + toString(day_number);
+    }
+}
+```
+This is the function that returns the day name. It takes in a number and returns a string. The match statement is used to check the value of the day_number variable. If the value is 0, then the case 0 statement is executed. If the value is 1, then the case 1 statement is executed. If the value is 2, then the case 2 statement is executed. If the value is 3, then the case 3 statement is executed. If the value is 4, then the case 4 statement is executed. If the value is 5, then the case 5 statement is executed. If the value is 6, then the case 6 statement is executed. If the value is anything else, then the default statement is executed. The default statement is used to handle any values that are not handled by the case statements. The default statement is optional. If you don't have a default statement, then the match statement will return null if the value is not handled by the case statements. 
 
-
+```zura
+while (have i := 0; i < 7) : (i := i + 1) {
+    info "Day " + toString(i) + " is " + getDayName(i);
+}
+```
+This is the code that calls the getDayName function. It uses a for loop to loop through the numbers 0 to 6. It then calls the getDayName function to get the day name for each number. It then prints out the day name.

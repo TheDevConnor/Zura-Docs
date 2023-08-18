@@ -1,0 +1,42 @@
+# Loops 
+While loops allow you to repeatedly execute code as long as a certain condition holds true. Understanding the key components 
+of while and for loops is essential for effective programming. Let's delve into some examples to clarify these concepts.
+
+## Basic While Loop Example
+```zura
+have i := 0;
+while(i < 10){ 
+    info i;
+    i := i + 1;
+}
+```
+In this example, the while keyword initiates a while loop. The condition in parentheses is evaluated before each iteration. If the condition remains true, the code within the curly braces is executed. In this case, i starts at 0 and increments by 1 with each iteration until it reaches 10.
+
+## While loop example with optional conditon
+```zura
+have i := 0;
+while(true) : (i := i + 1){ 
+    if(i = 5){
+        info "i is 5"; 
+        continue; 
+    }
+    if(i = 10){
+        info "i is 10";
+        break;
+    }
+}
+```
+This while loop is similar to the previous example, but it showcases an optional condition. When no condition is given after 
+`while(true) :`, the loop continues indefinitely. Here, `i` increments with each iteration. If `i` reaches 5, a message is displayed, 
+and the loop proceeds to the next iteration using `continue`. Upon reaching 10, the loop is terminated with `break`. In Zuras
+current state break is not working as intended and will be fixed in a future update.
+
+## For loop example
+```zura
+while(have i := 0; i < 10) : (i := i + 1){
+    info i;
+}
+```
+In this case, we encounter a for loop. The `have` keyword signifies that we're declaring a variable (`i`) within the condition. 
+This variable is only accessible within the condition and the loop's code block. The condition `(i < 10)` is evaluated before 
+each iteration. As long as it's true, the code within the loop is executed.
