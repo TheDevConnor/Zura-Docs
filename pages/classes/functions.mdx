@@ -1,0 +1,41 @@
+---
+title: Class Function Example in Zura
+---
+
+# Class Function Example in Zura
+
+In this example, we'll explore the usage of class functions within the "zura" programming language. The scenario involves 
+a class named "Person" and demonstrates how to define and call class functions.
+
+## Class Function Definition
+
+```zura
+class Person {
+  sayName() {
+    info this.name;
+  }
+}
+```
+In Zura, a class function is a method defined within a class that can be called on instances of that class. 
+Here, we've defined a class named "Person." Inside the class, the `sayName()` function is defined. This function 
+uses the `info` keyword to output the value of the `name` attribute using the `this` keyword.
+
+## Creating an Instance and Assigning Attributes
+
+```zura
+have jane := Person();
+jane.name := "Jane";
+```
+To use the class, we create an instance named "jane" of the "Person" class. We then set the `name` 
+attribute of the "jane" instance to "Jane."
+
+## Calling the Class Function
+
+```zura
+have method := jane.sayName;
+method(); // Prints "Jane".
+```
+In the above code, we create a variable named "method" and assign it the value of the `sayName` function of the 
+"jane" instance. This value is essentially a reference to the function. When we call `method()` on the next line, 
+it executes the `sayName()` function, which outputs the value of the `name` attribute of the "jane" instance, 
+resulting in "Jane" being printed to the console.
