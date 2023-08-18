@@ -1,0 +1,35 @@
+---
+title: Understanding the Simple Class Example in Zura
+---
+
+In the given example, we're introducing the concept of classes in the "zura" programming language through a straightforward 
+scenario involving a class named "Toast."
+
+## Class Declaration
+```zura
+class Toast {}
+```
+In Zura, a class is a blueprint for creating objects with specific attributes and behaviors. Here, we've defined a `class` 
+called "Toast" using the class keyword, followed by the class name and an empty set of curly braces. This serves as a 
+starting point for creating instances of the "Toast" class.
+
+## Creating an Instance of a Class
+```zura
+have toast := Toast();
+```
+To use a class, we create instances (objects) of that class. In this line of code, we declare a variable named "toast" 
+using the `have` keyword and initialize it with an instance of the "Toast" class by invoking the class with parentheses 
+`Toast()`. This instance represents a particular "Toast" object.
+
+## Adding Attributes
+```zura
+info toast.jam := "strawberry"; // add attribute "jam" to toast object, and prints "strawberry"
+```
+Classes allow us to define attributes (also known as properties or fields) that hold specific data for each instance. 
+In this case, we've added an attribute named "jam" to the "toast" instance and assigned the value "grape" to it.
+
+The info keyword is used to output information to the console. When we use toast.jam within the info statement, 
+it refers to the "jam" attribute of the "toast" instance.
+
+When you run this code, the console will display "grape," indicating that the "jam" attribute of the "toast" 
+instance is set to "grape."
