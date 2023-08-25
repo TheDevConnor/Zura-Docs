@@ -5,7 +5,7 @@ of while and for loops is essential for effective programming. Let's delve into 
 ## Basic While Loop Example
 ```zura
 have i := 0;
-while(i < 10){ 
+loop(i < 10){ 
     info i;
     i := i + 1;
 }
@@ -15,7 +15,7 @@ In this example, the while keyword initiates a while loop. The condition in pare
 ## While loop example with optional conditon
 ```zura
 have i := 0;
-while(true) : (i := i + 1){ 
+loop(true) : (i := i + 1){ 
     if(i = 5){
         info "i is 5"; 
         continue; 
@@ -33,7 +33,7 @@ current state break is not working as intended and will be fixed in a future upd
 
 ## For loop example
 ```zura
-while(have i := 0; i < 10) : (i := i + 1){
+loop(have i := 0; i < 10) : (i := i + 1){
     info i;
 }
 ```

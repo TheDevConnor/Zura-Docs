@@ -1,0 +1,70 @@
+---
+title: Math Library Documentation
+---
+
+# Math Library Documentation
+
+The `mathlib` is a collection of native functions that provide various mathematical operations for use within the Zura programming language. These functions cover a wide range of mathematical computations, from basic arithmetic to trigonometric and logarithmic functions.
+
+## List of Available Functions
+
+### Random Number Generation
+1. `mathRandom`: Generates a random floating-point number between 0 and 1.
+2. `mathRandomRange(min, max)`: Generates a random floating-point number within a specified range.
+
+### Rounding and Truncation
+3. `mathRound(number)`: Rounds a floating-point number to the nearest integer.
+4. `mathFloor(number)`: Rounds a floating-point number down to the nearest integer.
+5. `mathCeil(number)`: Rounds a floating-point number up to the nearest integer.
+
+### Absolute Value
+6. `mathAbs(number)`: Returns the absolute value of a number.
+
+### Logarithmic Functions
+7. `mathLog(number)`: Calculates the natural logarithm of a number.
+8. `mathLog10(number)`: Calculates the base 10 logarithm of a number.
+
+### Square Root
+9. `mathSqrt(number)`: Calculates the square root of a number.
+
+### Trigonometric Functions
+10. `mathSin(angle)`: Calculates the sine of an angle (in radians).
+11. `mathCos(angle)`: Calculates the cosine of an angle (in radians).
+12. `mathTan(angle)`: Calculates the tangent of an angle (in radians).
+
+### Additional Trigonometric Functions
+13. `mathCsc(angle)`: Calculates the cosecant of an angle (in radians).
+14. `mathSec(angle)`: Calculates the secant of an angle (in radians).
+15. `mathCot(angle)`: Calculates the cotangent of an angle (in radians).
+
+### Inverse Trigonometric Functions
+16. `mathAsin(value)`: Calculates the arcsine (inverse sine) of a value (returns angle in radians).
+17. `mathAcos(value)`: Calculates the arccosine (inverse cosine) of a value (returns angle in radians).
+18. `mathAtan(value)`: Calculates the arctangent (inverse tangent) of a value (returns angle in radians).
+
+### Miscellaneous
+19. `mathFastFib(n)`: Calculates the n-th Fibonacci number using a fast algorithm.
+
+## Usage Examples
+
+Here are a few examples of how you can use some of the functions provided by the `mathlib`:
+
+```zura
+// Generate a random number between 0 and 1
+random_number := mathRandom();
+
+// Calculate the square root of a number
+sqrt_result := mathSqrt(25);
+
+// Calculate the sine of an angle in radians
+sine_value := mathSin(0.5);
+
+// Calculate the natural logarithm of a number
+log_result := mathLog(10);
+
+
+These functions are designed to assist you in performing a wide 
+range of mathematical computations within your Zura programs. 
+Whether you need to generate random numbers, perform trigonometric 
+calculations, or work with logarithms, the mathlib has you 
+covered.

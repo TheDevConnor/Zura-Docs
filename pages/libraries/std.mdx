@@ -1,0 +1,50 @@
+---
+title: Standard Library Documentation
+---
+
+# Standard Library Documentation
+
+The `std` library provides a collection of native functions that offer various standard utilities and operations for working with data in the Zura programming language.
+
+## List of Available Functions
+
+### Length of Data
+1. `len(data)`: Returns the length of the specified data, such as strings, arrays, or other iterable structures.
+
+### Timing Functions
+2. `clock()`: Returns the current system time in milliseconds, allowing for basic time-related calculations.
+
+### Conversion Functions
+3. `toString(value)`: Converts a value to its string representation.
+4. `toNumber(value)`: Converts a value to its numerical representation.
+
+## Usage Examples
+
+Here are a few examples of how you can use some of the functions provided by the `std` library:
+
+### Length of Data
+```zura
+have array_length := len([1, 2, 3, 4]);
+have string_length := len("Hello, Zura!");
+```
+This will return the length of the specified data, 
+such as strings, arrays, or other iterable structures.
+
+### Timing Functions
+```zura
+have start_time := clock();
+// Do some work here...
+have end_time := clock();
+have elapsed_time := end_time - start_time;
+info "Elapsed time: " + toString(elapsed_time) + "ms";
+```
+This will return the current system time in milliseconds, 
+allowing for basic time-related calculations.
+
+### Conversion Functions
+```zura
+have string_value := toString(123);
+have number_value := toNumber("123");
+```
+This will convert a value to its string or 
+numerical representation.

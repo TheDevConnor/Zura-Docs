@@ -1,0 +1,35 @@
+---
+title: Array Operations in Zura
+---
+
+# Array Operations in Zura
+
+In this example, we'll explore array operations in the "zura" programming language. We have an array named "a" and we'll demonstrate various operations related to indexing, popping, and pushing elements.
+
+## Array Initialization
+
+```zura
+have a := [8, 9, 4, 1];
+```
+In Zura, arrays are collections of elements. Here, we've initialized an array "a" with the values `[8, 9, 4, 1]`.
+
+## Array Indexing
+
+```zura
+info a[0]; // 8
+```
+Array elements are indexed starting from 0. In this line, we use square brackets to access the element at index 0 of the array "a," which is `8`. The `info` statement prints the value `8` to the console.
+
+## Array Popping
+
+```zura
+info a <- 0; // 8
+```
+The `<-` operator is used to remove and return the element at a specific index. In this case, we're removing and returning the element at index 0 of the array "a," which is `8`. The `info` statement prints the value `1` to the console.
+
+## Array Pushing
+
+```zura
+info a -> 5 @ 0; // [5, 9, 4, 1]
+```
+The `->` operator is used to insert an element at a specific index. In this case, we're inserting the value `5` at index 0 of the array "a." The `info` statement prints the array `[5, 9, 4, 1]` to the console.

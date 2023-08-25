@@ -1,0 +1,35 @@
+---
+title: File System Library Documentation
+---
+
+# File System Library Documentation
+
+The `fs` library provides native functions that allow you to interact with files and perform file-related operations in the Zura programming language.
+
+## List of Available Functions
+
+### Reading Files
+1. `fsReadFile(filename)`: Reads the contents of a file and returns its content as a string.
+
+### Writing Files
+2. `fsWriteFile(filename, content)`: Writes the specified content to a file, creating the file if it doesn't exist.
+
+### Generating Files
+3. `fsGenerateFile(filename, content)`: Generates a new file with the specified content. If the file already exists, its content will be overwritten.
+
+### Deleting Files
+4. `fsDeleteFile(filename)`: Deletes the specified file.
+
+## Usage Examples
+
+Here are a few examples of how you can use some of the functions provided by the `fs` library:
+
+### Reading a File
+```zura
+file_content := fsReadFile("example.txt");
+info file_content;
+
+
+In this example, the `fsReadFile` function is used to read the 
+content of the file named "example.txt." The content is then 
+printed to the console using the `info` statement.
